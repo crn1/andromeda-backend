@@ -1,0 +1,8 @@
+flask
+flask-login
+flask-bcrypt
+flask-cors
+flask-paranoid
+sqlite3
+peewee
+python-slugify
