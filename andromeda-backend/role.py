@@ -1,7 +1,6 @@
-from flask import Blueprint, request, abort
+from flask import Blueprint
 from .models import *
 from .auth import role_required
-from playhouse.shortcuts import model_to_dict
 from .universals import create_or_patch, delete, get, search
 
 role_bp = Blueprint('role_bp', __name__, url_prefix='/role')

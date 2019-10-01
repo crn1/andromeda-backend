@@ -37,9 +37,6 @@ def value_error(e):
 from .user import user_bp
 app.register_blueprint(user_bp)
 
-#from .module import module_bp
-#app.register_blueprint(module_bp)
-
-@app.route('/teapot')
-def teapot():
-    return ''
+#@app.route('/teapot')
+#def teapot():
+#    return ''

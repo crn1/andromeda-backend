@@ -1,4 +1,4 @@
-from flask import Blueprint, request, abort
+from flask import Blueprint
 from .models import *
 from .auth import role_required
 from .universals import create_or_patch, delete, get, search
