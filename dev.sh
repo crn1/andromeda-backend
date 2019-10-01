@@ -1,3 +1,5 @@
+git config core.filemode false
+chmod -R 770 .
 python3 -m venv venv
 
 echo "" >> ./venv/bin/activate
