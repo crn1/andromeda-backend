@@ -1,5 +1,4 @@
 from .models import *
-from .lang import make_response
 from . import app
 
 from flask_bcrypt import Bcrypt
@@ -43,8 +42,8 @@ def load_user(user_id):
 
 @login_manager.unauthorized_handler
 def unauthorized():
-    return make_response('401', 'error')
+    return abort(401)
 
 @login_manager.needs_refresh_handler
 def refresh():
-    return make_response('UNAUTHORIZED_FRESH_LOGIN_NEEDED', 'error'), 401
+    return abort(401, 'FRESH_LOGIN_NEEDED')
