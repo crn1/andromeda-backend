@@ -10,7 +10,7 @@ echo "" >> ./venv/bin/activate.fish
 echo "export FLASK_ENV=development" >> ./venv/bin/activate.fish
 echo "export FLASK_APP=application:app" >> ./venv/bin/activate.fish
 
-python3 -c 'import os; print("secret_key = ", str(os.urandom(32)))' >> ./application/secrets.py
+python3 -c 'import os; print("secret_key = ", str(os.urandom(32)))' >> ./application/secret_key.py
 
 . ./venv/bin/activate
 pip install -r requirements.txt
