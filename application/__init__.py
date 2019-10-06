@@ -75,3 +75,9 @@ app.register_blueprint(role_bp)
 
 from .api.user_role import blueprint as user_role_bp
 app.register_blueprint(user_role_bp)
+
+#===============================
+# __name__ == '__main__'
+#===============================
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
