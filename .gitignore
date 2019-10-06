@@ -75,6 +75,8 @@ venv.bak/
 
 database.db
 secrets.py
+secret_key.py
+globals.py
 images/
 static/
 files/
